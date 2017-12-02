@@ -1,0 +1,11 @@
+name	class	sid	cid	wid	l	r	diff	pose_file	emo_file
+0	1	0	0	0	2	2	0	./windowed/pose/indiv/s_01/window_0.0.csv	./windowed/emotion/indiv_nan/s_01/window_0.0.csv
+0	1	0	0	0	1	1	0	./windowed/pose/indiv/s_01/window_0.1.csv	./windowed/emotion/indiv_nan/s_01/window_0.1.csv
+0	1	0	0	0	2	2	0	./windowed/pose/indiv/s_01/window_0.2.csv	./windowed/emotion/indiv_nan/s_01/window_0.2.csv
+0	1	1	0	80	0	0	0	./windowed/pose/indiv/s_02/window_80.2.	./windowed/emotion/indiv_nan/s_02/window_80.2.csv
+0	1	1	0	81	2	2	0	./windowed/pose/indiv/s_02/window_81.0.	./windowed/emotion/indiv_nan/s_02/window_81.0.csv
+0	1	1	0	81	2	2	0	./windowed/pose/indiv/s_02/window_81.1.	./windowed/emotion/indiv_nan/s_02/window_81.1.csv
+0	1	1	0	81	2	2	0	./windowed/pose/indiv/s_02/window_81.2.	./windowed/emotion/indiv_nan/s_02/window_81.2.csv
+0	1	1	0	82	2	2	0	./windowed/pose/indiv/s_02/window_82.0.	./windowed/emotion/indiv_nan/s_02/window_82.0.csv
+0	1	1	0	82	2	2	0	./windowed/pose/indiv/s_02/window_82.1.	./windowed/emotion/indiv_nan/s_02/window_82.1.csv
+0	1	1	0	82	1	1	0	./windowed/pose/indiv/s_02/window_82.2.	./windowed/emotion/indiv_nan/s_02/window_82.2.csv
