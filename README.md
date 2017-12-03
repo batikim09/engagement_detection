@@ -15,9 +15,9 @@ There are multiple experiments to check sanity.
 
 First, check the feature DB path that may be different from the original setup.
 
-In the script, replace the following option by your own path:
+In the script, replace the following option by your own path if it's different:
 
-"../../features/ENGAGEMENT_DEEP_POSE/DEEPCP.POSE.func.indiv.nan.delta.h5"
+"DEEPCP.POSE.func.indiv.nan.delta.h5"
 
 
 # References
