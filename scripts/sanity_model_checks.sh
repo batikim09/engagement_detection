@@ -1,6 +1,4 @@
 #sanity checks to see if the code works in your virtual environment, be careful about the location of feature DB(.h5)
-python ./ranking_svm_exp.py -dt ../../features/ENGAGEMENT_DEEP_POSE/DEEPCP.EMO.func.indiv.nan.h5 -test_idx 0 -valid_idx 1 -train_idx 2 -c 1.0 -log './output/sanity.txt' -error './output/sanity'
-
 #svm ranking exp using pose features without feature selection
 python ./ranking_svm_exp.py -dt ../../features/ENGAGEMENT_DEEP_POSE/DEEPCP.POSE.func.indiv.nan.delta.h5 -test_idx 0 -valid_idx 1 -c 0.01,0.1,1.0,10.0 -log './output/svmrank.pose.txt'
 
