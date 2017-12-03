@@ -1,6 +1,6 @@
 #sanity checks to see if the code works in your virtual environment, be careful about the location of feature DB(.h5)
 #svm ranking exp using pose features without feature selection
-python ./ranking_svm_exp.py -dt ../../features/ENGAGEMENT_DEEP_POSE/DEEPCP.POSE.func.indiv.nan.delta.h5 -test_idx 0 -valid_idx 1 -c 0.01,0.1,1.0,10.0 -log './output/svmrank.pose.txt'
+python ./ranking_svm_exp.py -dt ./feature/DEEPCP.POSE.func.indiv.nan.delta.h5 -test_idx 0 -valid_idx 1 -c 0.01,0.1,1.0,10.0 -log './output/svmrank.pose.txt'
 
 echo 'the output should be like:
 Complexity 0.010, performance of ranking on training data: tau_d: 0.354, prob_cm: [[ 0.64822134  0.35177866]
@@ -26,7 +26,7 @@ performance of ranking on testing data: tau_d: 0.533, prob_cm: [[ 0.40322581  0.
 '
 
 #pairwise loss based feature ranking and selection
-python ./ranking_svm_exp.py -dt ../../features/ENGAGEMENT_DEEP_POSE/DEEPCP.POSE.func.indiv.nan.delta.h5 -test_idx 0 -valid_idx 1 -c 0.01,0.1,1.0,10.0 --feat_select --pairwise -max_feat 30 -log './output/svmrank.pose.fs.txt'
+python ./ranking_svm_exp.py -dt ./feature/DEEPCP.POSE.func.indiv.nan.delta.h5 -test_idx 0 -valid_idx 1 -c 0.01,0.1,1.0,10.0 --feat_select --pairwise -max_feat 30 -log './output/svmrank.pose.fs.txt'
 
 echo 'the output should be like:
 Complexity 0.010, performance of ranking on training data: tau_d: 0.373, prob_cm: [[ 0.6284585  0.3715415]
@@ -53,7 +53,7 @@ performance of ranking on testing data: tau_d: 0.607, prob_cm: [[ 0.35483871  0.
 
 
 #Random forest based feature ranking and selection but using validataion data for its selection.
-python ./ranking_svm_exp.py -dt ../../features/ENGAGEMENT_DEEP_POSE/DEEPCP.POSE.func.indiv.nan.delta.h5 -test_idx 0 -valid_idx 1 -c 0.01,0.1,1.0,10.0 --feat_select -max_feat 30 -rf_n 500 --fs_by_valid --fs_by_rf -log './output/svmrank.pose.delta.fs_by_rf.30.txt'
+python ./ranking_svm_exp.py -dt ./feature/DEEPCP.POSE.func.indiv.nan.delta.h5 -test_idx 0 -valid_idx 1 -c 0.01,0.1,1.0,10.0 --feat_select -max_feat 30 -rf_n 500 --fs_by_valid --fs_by_rf -log './output/svmrank.pose.delta.fs_by_rf.30.txt'
 
 echo 'the output should be like:
 Complexity 0.010, performance of ranking on training data: tau_d: 0.460, prob_cm: [[ 0.51383399  0.48616601]
